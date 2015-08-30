@@ -1,6 +1,6 @@
 #Composite shape#
 
-Битрикс компонет для отложенной загрузки нагруженных елементов сайта.
+Битрикс компонент для отложенного вывода тяжёлых элементов сайта.
 
 
 ##Example:##
@@ -17,7 +17,8 @@ $APPLICATION->IncludeComponent(
        "CACHE_TAG"     => array("Pro")   # The tag for the cache.
        "CALL_FUNCTION" => function() {
 
-           echo time();           
+           echo time();   
+           sleep(3);
 
        }
    ),                                    # The anonymous function (body -shape)
@@ -27,4 +28,14 @@ $APPLICATION->IncludeComponent(
    )
 );
 ```
- 
+
+
+##Clear cache example:##
+
+ ```php
+\CBitrixComponent::includeComponentClass("8il:composite.shape");
+if (class_exists('CCompositeShapeClass')) {
+   \CCompositeShapeClass::clearCacheById($cacheId);
+}
+  
+ ```
