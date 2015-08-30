@@ -1,0 +1,5 @@
+<?php if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+?><script src="https://code.jquery.com/jquery-2.1.3.min.js"></script><?
+$url = $GLOBALS['APPLICATION']->GetCurPageParam($arResult['URL_KEY']."=".$arResult['COMPONENT_ID']."&sessid=".bitrix_sessid(),array("sessid",$arResult['URL_KEY']) );
+?><script>jQuery(document).ready(function($) { $.get( "<?= $url ?>", function( data ) { $( "#container_<?= $arResult['COMPONENT_ID'] ?>" ).after( data );$( "#container_<?= $arResult['COMPONENT_ID'] ?>" ).remove();});});</script><div id="container_<?= $arResult['COMPONENT_ID'] ?>"><?
+if ($arResult['USE_PRELOADER']) { ?><img style='padding-top:30%;margin:0px auto;' src="<?= $arResult['PRELOADER_IMG'] ?>"><? } ?><?= (isset($arResult['FLASH_RETURN'])) ? $arResult['FLASH_RETURN'] : ""?></div><?
