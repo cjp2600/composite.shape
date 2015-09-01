@@ -380,6 +380,7 @@ Class CCompositeShapeClass extends CBitrixComponent
     public static function clearCacheById($cacheId)
     {
         $class = new self();
+        $cacheId = md5($cacheId);
         $class->cachePath = '/' . __CLASS__ . '/' . $class->subDir . '/' . $cacheId . '/';
         if ($class->isSetCacheDate($cacheId)) {
             $class->setFlashdata($cacheId, $class->arResult['RETURN']);
