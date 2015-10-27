@@ -1,0 +1,30 @@
+{
+  "name": "cjp2600/composite.shape",
+  "description": "composite emulator component",
+  "homepage": "http://8il.ru",
+  "type": "bitrix-component",
+  "authors": [
+         {
+		  "name": "Stanislav Semenov",
+		  "email": "icjp2600@gmail.com",
+		  "homepage": "http://8il.ru",
+		  "role": "Developer"
+	  }
+	],
+	"support": {
+	  "email": "icjp2600@gmail.com",
+	  "docs": "https://github.com/cjp2600/bim-core",
+	  "source": "https://github.com/cjp2600/bim-core"
+	},
+  "keywords": [
+    "bitrix",
+    "component",
+    "ajax"
+  ],
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.3.0",
+    "composer/installers": "~1"
+  }
+}
