@@ -10,7 +10,7 @@
 {
   "extra": {
     "installer-paths": {
-      "local/components/{$name}/": [
+      "local/components/{$vendor}/{$name}/": [
         "type:bitrix-component"
       ]
     }
