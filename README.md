@@ -58,3 +58,6 @@ if (class_exists('CCompositeShapeClass')) {
 }
   
  ```
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/cjp2600/composite.shape/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
